@@ -1,0 +1,16 @@
+HeapViz is a tool for generating PNG images using OnlinePythonTutor and webkit2png.  The latter dependency means it only works on Macs.
+
+Prerequisites:
+
+- Mac OS X 10.5+
+- Python 2, accessible as 'python'
+    - PIL
+- Python 3, accessible as 'python3'
+
+Usage:
+
+First, run setup.sh to pull down a local copy of OnlinePythonTutor and webkit2png.  Now you can use the following to generate a PNG:
+
+./heap2png.sh your_script.py [starting instruction]
+
+...where "starting instruction" is the 0-based index of the instruction whose heap should be visualized.  If omitted, the heap of the last instruction will be drawn.
